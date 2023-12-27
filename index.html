@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obokeng Molefe's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            animation: colorChange 5s infinite alternate;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .profile-img {
+            max-width: 10%;
+            height: 10%;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            animation: rotate 3s infinite linear;
+        }
+        .center-image {
+            text-align: center;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes colorChange {
+            from {
+                background-color: #f8f8f8;
+            }
+            to {
+                background-color: #e6f7ff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Obokeng's Portfolio</h1>
+    </header>
+    <section>
+        <div class="center-image">
+            <br>
+                <!-- Add the profile image from S3 -->
+                <img class="profile-img" src="https://obokengterraformprojectwebsite2023.s3.af-south-1.amazonaws.com/profile.jpeg" alt="Profile Image">
+            <br>
+            <hr>
+            <br>
+        </div>
+        <h2><center>About Me</center></h2>
+        <p><center>Driven, diligent and out spoken young man looking for an ambitious company which will challenge my developer and problem solving skills and allow me to continue to 
+            develop my knowledge and potential. I’m a skilled systems developer with proven expertise in using new tools and technical developments to drive improvements throughout 
+            an entire software development lifecycle.Proficient in various programs, operating systems and applications. Expect at finding and resolving malfunctions, using 
+            exceptional technical and communication skills to ensure minimization of down time and optimal computer performance.</center>
+        </p>
+    </section>
+</body>
+</html>
